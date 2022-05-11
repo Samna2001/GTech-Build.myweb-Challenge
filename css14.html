@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-14</title>
+    <style>
+        h4{
+            text-align: center;
+            font-family: sans-serif;
+        }
+        .list-container{
+            display: flex;
+            flex-direction: column;
+            margin-block: 36px;
+        }
+        .list{
+            display: flex;
+            flex-direction: row;
+            border: solid 1px black;
+            margin-block: 4px;
+            margin-inline: 32px;
+            align-items: center;
+            padding: 12px;
+        }
+        .circle{
+            width:24px;
+            height:24px;
+            display: inline-block;
+            border: solid 1px black;
+            border-radius: 50%;
+            margin-right:10px
+        }
+    </style>
+</head>
+<body>
+    <h4>Create a simple to-do list app with each element on each box arranged vertically</h4>
+    <div class="list-container">
+        <div class="list">
+                <div class="circle"></div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        </div>
+        <div class="list">
+                <div class="circle"></div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        </div>
+        <div class="list">
+                <div class="circle"></div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        </div>
+        <div class="list">
+                <div class="circle"></div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        </div>
+    </div>
+</body>
+</html>

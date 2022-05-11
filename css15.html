@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-15</title>
+    <style>
+        *{
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+        body{
+            background-image: url("./banner.jpg");
+            background-size: cover;
+        }
+        .content{
+            margin: 25px;
+            outline: dashed 1px black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: max-content;
+            padding-inline: 42px;
+            justify-content: center;
+            background-color: white;
+        }
+        .form-container h2{
+            font-size: 28px;
+            text-align: center;
+            margin-top:18px;
+        }
+        .dInput{
+            margin-inline:14px ;
+            margin-block: 12px;
+        }
+        .dInput input{
+            margin-top: 12px;
+            width: 300px;
+            background-color: #f1f1f1;
+            height: 30px;
+            border-radius: 9px;
+            border: 1px solid #ccc;
+            padding: 5px;
+        }
+        .dInput label{
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .dInput button{
+            width: 311px;
+            height:38px;
+            color: white;
+            border: none;
+            background-color: #373b3e;
+            padding-block: 9px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content" >
+        <form class="form-container">
+        <h2>SignUp</h2>
+        </br>
+        <div class="dInput">
+            <label>First Name</label>
+            <br>
+            <input type="text" name="firstname" placeholder="First Name">
+        </div>
+        <div class="dInput">
+            <label>Last Name</label>
+            <br>
+            <input type="text" name="lastname" placeholder="Last Name">
+        </div>
+        <div class="dInput">
+            <label>Date of Birth</label>
+            <br>
+            <input type="date" name="dob" placeholder="Date of Birth">
+        </div>
+        <div class="dInput">
+            <label>Email</label>
+            <br>
+            <input type="email" name="email" placeholder="Email">
+        </div>
+        <div class="dInput">
+            <label>Password</label>
+            <br>
+            <input type="password" name="password" placeholder="Password">
+        </div>
+        <div class="dInput">
+            <label>Confirm Password</label>
+            <br>
+            <input type="password" name="confirmpassword" placeholder="Confirm Password">
+        </div>
+        <div class="dInput">
+            <button >Register</button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
